@@ -1,0 +1,12 @@
+name: Test
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wait 60 seconds
+        run: sleep 60
